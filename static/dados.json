@@ -239,7 +239,7 @@
                     "id": 15,
                     "assunto": "Coleta de andamentos indevida",
                     "template": [
-                        "Gostaríamos de saber o motivo pelo qual o andamento foi coletado",
+                        "Gostaríamos de saber o motivo pelo qual o andamento a seguir foi coletado para o nosso cliente",
                         "valores",
                         ""
                     ],
@@ -252,7 +252,7 @@
                     "id": 16,
                     "assunto": "Coleta de publicação indevida",
                     "template": [
-                        "Gostaríamos de saber o motivo pelo qual a publicação foi coletada",
+                        "Gostaríamos de saber o motivo pelo qual a publicação a seguir foi coletada para o nosso cliente",
                         "valores",
                         ""
                     ],
@@ -267,7 +267,7 @@
                     "id": 17,
                     "assunto": "Coleta de intimação indevida",
                     "template": [
-                        "Gostaríamos de saber o motivo pelo qual a publicação foi coletada",
+                        "Gostaríamos de saber o motivo pelo qual a intimação foi coletada para o nosso cliente",
                         "valores",
                         ""
                     ],
@@ -352,14 +352,32 @@
                 {
                     "id": 2,
                     "email": "joana.campos@asaas.com.br",
-                    "nome": "Teste",
-                    "tipo": "Teste de desenvolvimento"
+                    "nome": "Joana",
+                    "tipo": ""
                 },
                 {
                     "id": 3,
-                    "email": "marasampaioslm375@gmail.com",
-                    "nome": "Teste",
-                    "tipo": "Teste de desenvolvimento"
+                    "email": "leticia.rocha@asaas.com.br",
+                    "nome": "Letícia",
+                    "tipo": ""
+                },
+                {
+                    "id": 4,
+                    "email": "contato@asaas.com.br",
+                    "nome": "Padrão",
+                    "tipo": "Dúvidas e demandas comerciais"
+                },
+                {
+                    "id": 5,
+                    "email": "integracoes@asaas.com.br",
+                    "nome": "Letícia",
+                    "tipo": "Problemas com API do Asaas"
+                },
+                {
+                    "id": 6,
+                    "email": "fernanda.monteiro@asaas.com.br",
+                    "nome": "Fernanda",
+                    "tipo": "Gerente de contas"
                 }
             ],
             "tipos": [
@@ -379,7 +397,7 @@
                 },
                 {
                     "id": 2,
-                    "assunto": "Solicitação de aumento de limite",
+                    "assunto": "Emissão de boleto",
                     "template": [
                         "",
                         "valores",
@@ -400,6 +418,7 @@
                         ""
                     ],
                     "campos": [
+                        14,
                         15
                     ]
                 },
