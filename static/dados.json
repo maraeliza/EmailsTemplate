@@ -7,6 +7,12 @@
                 {
                     "id": 1,
                     "email": "marasampaioslm375@gmail.com",
+                    "nome": "Teste",
+                    "tipo": "Teste de desenvolvimento"
+                },
+                {
+                    "id": 2,
+                    "email": "atendimento@solucionare.movidesk.com",
                     "nome": "Solucionare",
                     "tipo": "Atendimento Padrão"
                 }
