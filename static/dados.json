@@ -1,0 +1,460 @@
+{
+    "fornecedores": [
+        {
+            "id": 1,
+            "nome": "Solucionare",
+            "emails": [
+                {
+                    "id": 1,
+                    "email": "marasampaioslm375@gmail.com",
+                    "nome": "Solucionare",
+                    "tipo": "Atendimento Padrão"
+                }
+            ],
+            "tipos": [
+                {
+                    "id": 0,
+                    "assunto": "Template básico",
+                    "template": [
+                        "Bom dia! Tudo bem?",
+                        "",
+                        "Desde já, agradeço!",
+                        "Qualquer dúvida, estou à disposição.",
+                        "Atenciosamente,",
+                        "Mara.",
+                        "",
+                        "",
+                        "<span style='color:darkred'>Solicitamos a gentileza de desconsiderar o id e o número mencionados no assunto deste e-mail, uma vez que são utilizados apenas para fins de controle interno.</span>"
+                    ],
+                    "campos": [
+                        1
+                    ]
+                },
+                {
+                    "id": 1,
+                    "assunto": "Cadastro de termo monitorado",
+                    "template": [
+                        "Eu gostaria de solicitar o cadastro de termo monitorado.\n",
+                        "valores",
+                        "\nPor favor, nos responda com o id do nome do termo monitorado para que possamos cadastrar por aqui."
+                    ],
+                    "campos": [
+                        1,
+                        9,
+                        12
+                    ]
+                },
+                {
+                    "id": 2,
+                    "assunto": "Cadastro de variável em termo monitorado",
+                    "template": [
+                        "Eu gostaria de solicitar o cadastro de variável para o termo monitorado a seguir:",
+                        "valores"
+                    ],
+                    "campos": [
+                        1,
+                        5,
+                        11
+                    ]
+                },
+                {
+                    "id": 3,
+                    "assunto": "Cadastro de OAB suplementar",
+                    "template": [
+                        "Gostaria de solicitar o cadastro de OAB suplementar. ",
+                        "valores"
+                    ],
+                    "campos": [
+                        1,
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "id": 4,
+                    "assunto": "Status 'ERRO' no login para coleta de intimações",
+                    "template": [
+                        "Gostaria de relatar um problema que estamos enfrentando ao tentar cadastrar o login do cliente na plataforma Easyjur para a coleta de intimações eletrônicas. <br>",
+                        "As credenciais de acesso do cliente ao tribunal estão corretos, pois testamos diretamente acessando o tribunal. No entanto, o status permanece com ERRO. <br>",
+                        "valores",
+                        "Por favor, poderiam verificar e nos informar o motivo pelo qual isso está ocorrendo e nos fornecer orientações sobre como proceder para resolver essa questão?"
+                    ],
+                    "campos": [
+                        1,
+                        4,
+                        7,
+                        8
+                    ]
+                },
+                {
+                    "id": 5,
+                    "assunto": "Status 'ERRO' no push de andamentos",
+                    "template": [
+                        "Identificamos um problema com o push, que retornou com status ERRO.",
+                        "valores",
+                        "Por favor, poderiam verificar e nos informar o motivo pelo qual isso está ocorrendo e nos fornecer orientações sobre como proceder para resolver essa questão?"
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 6,
+                    "assunto": "Status 'VALIDANDO' no push de andamentos",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 7,
+                    "assunto": "Não coleta de andamentos",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 8,
+                    "assunto": "Não coleta de publicações",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 9,
+                    "assunto": "Não coleta de intimações",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 10,
+                    "assunto": "Atraso na coleta de andamentos",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 11,
+                    "assunto": "Atraso na coleta de publicações",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 12,
+                    "assunto": "Atraso na coleta de intimações",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 13,
+                    "assunto": "Integração para coleta de conteúdo",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 14,
+                    "assunto": "Bloqueio de termo na coleta de publicação",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 15,
+                    "assunto": "Coleta de andamentos indevida",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 16,
+                    "assunto": "Coleta de publicação indevida",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 17,
+                    "assunto": "Coleta de intimação indevida",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 18,
+                    "assunto": "Publicações sem número de processo",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                },
+                {
+                    "id": 19,
+                    "assunto": "Status 'ERRO' no login com dupla autenticação",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Kurier",
+            "emails": [
+                {
+                    "id": 1,
+                    "email": "marasampaioslm375@gmail.com",
+                    "nome": "Joana",
+                    "tipo": "Comercial"
+                }
+            ],
+            "tipos": [
+                {
+                    "id": 1,
+                    "assunto": "Erro na emissão de nota fiscal",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Asaas",
+            "emails": [
+                {
+                    "id": 1,
+                    "email": "marasampaioslm375@gmail.com",
+                    "nome": "Joana",
+                    "tipo": "Comercial"
+                }
+            ],
+            "tipos": [
+                {
+                    "id": 1,
+                    "assunto": "Erro na emissão de nota fiscal",
+                    "template": [
+                        "",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        2
+                    ]
+                }
+            ]
+        }
+    ],
+    "solicitantes": [
+        {
+            "id": 0,
+            "nome": "Cliente",
+            "email": "cliente"
+        },
+        {
+            "id": 1,
+            "nome": "EasyJur",
+            "email": "ej"
+        },
+        {
+            "id": 2,
+            "nome": "Gabriela Dutra",
+            "email": "gdutra@easyjur.com"
+        },
+        {
+            "id": 3,
+            "nome": "Isabela Grizante",
+            "email": "igrizante@easyjur.com"
+        },
+        {
+            "id": 4,
+            "nome": "Raiany Araújo",
+            "email": "raraujo@easyjur.com"
+        },
+        {
+            "id": 5,
+            "nome": "Mara Eliza",
+            "email": "meliza@easyjur.com"
+        }
+    ],
+    "campos": [
+        {
+            "id": 1,
+            "nome": "ID EMPRESA",
+            "idElemento": "idEmpresa"
+        },
+        {
+            "id": 2,
+            "nome": "Número do Processo",
+            "idElemento": "numProcesso"
+        },
+        {
+            "id": 3,
+            "nome": "Código da Publicação",
+            "idElemento": "codPublicacao"
+        },
+        {
+            "id": 4,
+            "nome": "Tribunal",
+            "idElemento": "tribunal"
+        },
+        {
+            "id": 5,
+            "nome": "ID NOME",
+            "idElemento": "idNome"
+        },
+        {
+            "id": 6,
+            "nome": "OAB SUPLEMENTAR",
+            "idElemento": "oabSuplementar"
+        },
+        {
+            "id": 7,
+            "nome": "LOGIN",
+            "idElemento": "loginTribunal"
+        },
+        {
+            "id": 8,
+            "nome": "SENHA",
+            "idElemento": "senhaTribunal"
+        },
+        {
+            "id": 9,
+            "nome": "TERMO MONITORADO",
+            "idElemento": "termoCaixa"
+        },
+        {
+            "id": 10,
+            "nome": "CÓDIGO ALFANUMÉRICO",
+            "idElemento": "codAlfa"
+        },
+        {
+            "id": 11,
+            "nome": "VARIÁVEL",
+            "idElemento": "variável"
+        },
+        {
+            "id": 12,
+            "nome": "NOME",
+            "idElemento": "nomeCaixa"
+        },
+        {
+            "id": 13,
+            "nome": "Data da última coleta",
+            "idElemento": "dataCaixa"
+        },
+        {
+            "id": 14,
+            "nome": "Nota fiscal",
+            "idElemento": "nfCaixa"
+        },
+        {
+            "id": 15,
+            "nome": "CNPJ",
+            "idElemento": "cnpjCaixa"
+        },
+        {
+            "id": 16,
+            "nome": "Nota fiscal",
+            "idElemento": "nfCaixa"
+        },
+        {
+            "id": 17,
+            "nome": "Data",
+            "idElemento": "dataCaixa"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+.header{
+    background-color: #00001b !important;
+}
+.tipo_email{
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.caixa_email{
+    display: block;
+}
+.selecao{
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+}
+.nf{
+    margin-top:10px;
+}
+.cps{
+    display: flex;
+}
+.caixaDeEmail{
+   height:300px;
+}
+#cpBtn{
+    margin-top:10px;
+}
+
+input, textarea{
+    width:40%;
+    margin-bottom:20px;
+    box-shadow:  0px 0px 12px #00002c37;
+    background-color: #00002c !important;
+    color:white !important;
+}
+select{
+    background-color: #00002c !important;
+    color:white !important;
+    box-shadow:  0px 0px 12px #00002c37;
+}
+.btm{
+   
+    width:40%;
+}
+body{
+    background-color: #00002c !important;
+    color:white !important;
+}

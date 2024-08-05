@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/CLEditor1_4_5/jquery.cleditor.min.js"></script>
+    <link rel="stylesheet" href="static/CLEditor1_4_5/jquery.cleditor.css">
+    <script src="static/CLEditor1_4_5/jquery.cleditor.js"></script>
+    <script src="static/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="static/sweetalert.css">
+    <title>Documento</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse header" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Contato com fornecedores</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="perfil.html" >Meu perfil</a></li>
+            <li><a href="email.html" style="color:white !important">Enviar emails</a></li>
+           
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+
+        <h2 class="page-header">Contato com fornecedores</h2>
+        
+        <div class="tipo_email">
+            <div class="selecao">
+                <label for="options">Escolha o solicitante:</label>
+                <select  class='form-control' id="solOp" name="options">
+                    <option value="0">Selecione uma opção</option>
+                </select>
+            </div>
+            <div class="selecao" id="idEmBox">
+                <label for="idEmCaixa" id="labelId">Digite o id:</label>
+                <input  class='form-control' id="idEmCaixa" name="idEmCaixa"/>
+            </div>
+        </div>
+        <div class="tipo_email">
+        
+            <div class="selecao" id="forBox">
+                <label for="options">Escolha o fornecedor:</label>
+                <select  class='form-control' id="forOp" name="options">
+                    <option value="0">Selecione uma opção</option>
+                </select>
+            </div>
+            <div class="selecao" id="desBox">
+                <label for="options">Escolha o destinatário:</label>
+                <select  class='form-control' id="desOp" name="options">
+                    <option value="0">Selecione uma opção</option>
+            </select>
+            
+            </div>
+            <div class="selecao" id="tipBox">
+            <label for="options">Escolha o tipo de email:</label>
+            <select class='form-control' id="tipOp" name="options">
+                <option value="0">Selecione uma opção</option>
+                </select>
+            </div> 
+        </div>
+        <br>
+        <h3 id="cpTxt">Preencha esses campos <hr></h3>
+        
+        <div class="campos" id="camposPersonalizadosBox">
+            <div id="nfCaixa">
+                <br>
+                <label for="NF">Nota Fiscal</label>
+                <textarea cols="30" rows="10" name="NF" class="form-control nf" id="nfCaixa" placeholder="Coloque aqui a resposta da API do Asaas da nota fiscal com erro"></textarea>
+            </div>
+        </div>
+        <button id="cpBtn" class="btn btn-primary" >Adicionar</button>
+
+        <br><br>
+        <h3 id="cpTxt">Seu e-mail</h3><hr>
+        
+        <div class="caixa_email">
+            <br>
+            <label for="cc">Escolha quem receberá o email em cópia:</label>
+            <input name="cc" class="form-control" id="cc" placeholder="Digite aqui o endereço de email para enviar em cópia"></input>
+            
+            <br>
+            <label for="destinatario">Escolha o destinatário do email:</label>
+            <input name="destinatario" class="form-control" id="destinatario" placeholder="Digite aqui o destinatário do email"></input>
+            
+            <br>
+            <label for="assunto">Escolha o assunto do email:</label>
+            <input name="assunto" class="form-control" id="assunto" placeholder="Digite aqui o assunto"></input>
+            <br>
+            <label for="email">Digite o email:</label>
+            <textarea class='form-control col-md-6 caixaDeEmail' id="email">
+            </textarea>
+            <br>
+        <button class="btn btn-primary" onclick="sendEmail()">Enviar</button>
+   
+</div>
+</div>
+
+
+<script src="../static/code.js"></script>
+</body>
+</html>
