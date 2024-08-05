@@ -53,7 +53,7 @@ function definirTipo() {
   if (idDes != 0) {
     idFor = $("#forOp").val();
     var forn = fornecedores.find((forn) => forn.id == idFor);
-    var tipos = forn.tipos.sort((t1,t2)=>{return t1.assunto.localeCompare(t2.assunto)}) ;
+    var tipos = forn.tipos.sort((t1, t2) => { return t1.assunto.localeCompare(t2.assunto) });
     tipos.forEach((tipo) => {
       $("#tipOp").append(
         '<option value="' + tipo.id + '">' + tipo.assunto + "</option>"
@@ -150,6 +150,8 @@ function addTemplate(data) {
 function attTemplate(data) {
   var idOp = $("#tipOp").val();
   idFor = $("#forOp").val();
+  var fornecedores = data.fornecedores;
+  
   var forn = fornecedores.find((forn) => forn.id == idFor);
   var tipos = forn.tipos;
   var tipo = tipos.find((tip) => tip.id == idOp);
@@ -167,7 +169,10 @@ function attTemplate(data) {
       $("#" + campo.idElemento + "Box").show();
       $("#" + campo.idElemento).show();
     });
-    montarTemplate(fornecedores[0].tipos[0].template, tipo.template);
+    
+    template1 = fornecedores[0].tipos.find((tipo)=> tipo.id == 0)
+    console.log(template1)
+    montarTemplate(template1.template, tipo.template);
   } else {
     esconderCamposPersonalizados();
   }
@@ -214,7 +219,7 @@ $(document).ready(() => {
 
   // Função para carregar o arquivo JSON
   $.getJSON(
-    "https://raw.githubusercontent.com/maraeliza/dados/main/dados.json",
+    "https://raw.githubusercontent.com/maraeliza/EmailsTemplate/main/static/dados.json",
     (data) => {
       campos = data.campos;
       definirCamposPersonalizados(campos);
@@ -295,20 +300,21 @@ $(document).ready(() => {
         idFor = $("#forOp").val();
         if (idFor != 0) {
           var forn = fornecedores.find((forn) => forn.id == idFor);
+
           forn.emails.forEach((email) => {
             $("#desOp").append(
               '<option value="' +
-                email.email +
-                '">' +
-                email.nome +
-                " [" +
-                email.tipo +
-                "]" +
-                "</option>"
+              email.email +
+              '">' +
+              email.nome +
+              " [" +
+              email.tipo +
+              "]" +
+              "</option>"
             );
           });
           if (idFor == 1) {
-            $("#desOp").val("atendimento@solucionare.movidesk.com");
+            $("#desOp").val(forn.emails[0].email);
             definirTipo();
           }
           $("#desBox").show();
