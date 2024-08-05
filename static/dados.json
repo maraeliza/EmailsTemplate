@@ -17,14 +17,15 @@
                     "assunto": "Template básico",
                     "template": [
                         "Bom dia! Tudo bem?",
-                        "",
+                        "","",
                         "Desde já, agradeço!",
                         "Qualquer dúvida, estou à disposição.",
                         "Atenciosamente,",
                         "Mara.",
                         "",
                         "",
-                        "<span style='color:darkred'>Solicitamos a gentileza de desconsiderar o id e o número mencionados no assunto deste e-mail, uma vez que são utilizados apenas para fins de controle interno.</span>"
+                        "<span style='color:darkred'>Solicitamos a gentileza de desconsiderar o id e o número mencionados no assunto deste e-mail, uma vez que são utilizados apenas para fins de controle interno.</span>",
+                        "<img src='https://i.postimg.cc/VNhxkYsC/Mara-Eliza.png'>"
                     ],
                     "campos": [
                         1
