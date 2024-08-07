@@ -303,6 +303,21 @@
                         2,
                         10
                     ]
+                },
+                {
+                    "id": 20,
+                    "assunto": "Refinamento de termo monitorado",
+                    "template": [
+                        "Eu gostaria de solicitar o refinamento do seguinte termo monitorado:",
+                        "valores",
+                        ""
+                    ],
+                    "campos": [
+                        1,
+                        5,
+                        12,
+                        29
+                    ]
                 }
             ]
         },
@@ -499,6 +514,11 @@
             "id": 9,
             "nome": "Gabriel Alexandre",
             "email": "galexandre@easyjur.com"
+        },
+        {
+            "id": 10,
+            "nome": "Marcelia Dias",
+            "email": "mdias@easyjur.com"
         }
     ],
     "campos": [
@@ -586,6 +606,11 @@
             "id": 17,
             "nome": "Data",
             "idElemento": "dataCaixa"
+        },
+        {
+            "id": 29,
+            "nome": "OAB",
+            "idElemento": "oab"
         }
     ]
 }
