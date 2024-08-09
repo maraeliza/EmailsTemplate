@@ -102,10 +102,13 @@ function sendEmail() {
     .then((response) => response.text())
     .then((data) => {
       console.log(data);
-      swal({
-        title: "Email enviado com sucesso!"
-      });
-      ed.$area.empty()
+      if(data=='Email enviado'){
+        swal({
+          title: "Email enviado com sucesso!"
+        });
+       
+      }
+      
     })
     .catch((error) => console.error("Erro:", error));
 }
